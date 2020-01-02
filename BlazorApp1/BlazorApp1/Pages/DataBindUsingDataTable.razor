@@ -1,0 +1,38 @@
+﻿@using System.Data
+@page "/databind"
+
+<h1>Binding</h1>
+<div class="row">
+    <div class="col-md-8">
+        <div class="form-group">
+            <label for="Name">Name</label>
+            @*<input id="Name" class="form-control" @bind="@Caption"/>*@
+            <input id="Name" class="form-control" @bind="@Caption" @onblur="@onchange1"/>
+        </div>
+        <div class="form-group">
+            <label for="Department" >Department</label>
+            <input id="Department" class="form-control" @bind="@ShortCaption" />
+        </div>
+    </div>
+</div>
+
+@code {
+
+    DataTable tabInsurance = null;
+    DataRow rowEDINS;
+    string Caption, ShortCaption;
+
+    protected override void OnInitialized()
+    {
+        tabInsurance = SqlTable.GetDataTableToBind();
+
+        Caption = tabInsurance.Rows[0].ItemArray[0].ToString();
+
+        ShortCaption = tabInsurance.Rows[0].ItemArray[1].ToString();
+    }
+
+    protected void onchange1()
+    {
+        tabInsurance.Rows[0].ItemArray[0] = Caption;
+    }
+}
