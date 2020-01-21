@@ -74,7 +74,6 @@ C:\Users\jaya\Desktop\blazor\Workouts\BlazorApp1\BlazorApp1\bin\Debug\netcoreapp
 C:\Users\jaya\Desktop\blazor\Workouts\BlazorApp1\BlazorApp1\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
 C:\Users\jaya\Desktop\blazor\Workouts\BlazorApp1\BlazorApp1\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\jaya\Desktop\blazor\Workouts\BlazorApp1\BlazorApp1\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
-C:\Users\jaya\Desktop\blazor\Workouts\BlazorApp1\BlazorApp1\obj\Debug\netcoreapp3.1\BlazorApp1.csprojAssemblyReference.cache
 C:\Users\jaya\Desktop\blazor\Workouts\BlazorApp1\BlazorApp1\obj\Debug\netcoreapp3.1\staticwebassets\BlazorApp1.StaticWebAssets.Manifest.cache
 C:\Users\jaya\Desktop\blazor\Workouts\BlazorApp1\BlazorApp1\obj\Debug\netcoreapp3.1\staticwebassets\BlazorApp1.StaticWebAssets.xml
 C:\Users\jaya\Desktop\blazor\Workouts\BlazorApp1\BlazorApp1\obj\Debug\netcoreapp3.1\BlazorApp1.MvcApplicationPartsAssemblyInfo.cache
