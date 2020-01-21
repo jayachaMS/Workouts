@@ -1,5 +1,9 @@
 ﻿@page "/todo"
+@inherits BlazorApp1.ToDoClass
+@code{
 
+
+}
 <h3>ToDo</h3>
 <ul>
     @foreach (MyDoTo todo in todos)
@@ -14,7 +18,7 @@
 <input placeholder="todo..." @bind="newtodo"/>
 <button @onclick="AddNew">New todo</button>
 
-@code {
+@*@code {
     private IList<MyDoTo> todos = new List<MyDoTo>();
     private string newtodo;
 
@@ -24,4 +28,4 @@
         todos.Add(new MyDoTo { Title = newtodo });
         newtodo = string.Empty;
     }
-}
+}*@
