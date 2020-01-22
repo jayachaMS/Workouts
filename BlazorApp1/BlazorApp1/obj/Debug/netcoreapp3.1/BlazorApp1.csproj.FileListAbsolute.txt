@@ -84,7 +84,9 @@ C:\Users\jaya\Desktop\blazor\Workouts\BlazorApp1\BlazorApp1\obj\Debug\netcoreapp
 C:\Users\jaya\Desktop\blazor\Workouts\BlazorApp1\BlazorApp1\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\DataBindUsingDataTable.razor.g.cs
 C:\Users\jaya\Desktop\blazor\Workouts\BlazorApp1\BlazorApp1\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Error.razor.g.cs
 C:\Users\jaya\Desktop\blazor\Workouts\BlazorApp1\BlazorApp1\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Index.razor.g.cs
+C:\Users\jaya\Desktop\blazor\Workouts\BlazorApp1\BlazorApp1\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\LayoutInComponent.razor.g.cs
 C:\Users\jaya\Desktop\blazor\Workouts\BlazorApp1\BlazorApp1\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\MyRazors\ToDo.razor.g.cs
+C:\Users\jaya\Desktop\blazor\Workouts\BlazorApp1\BlazorApp1\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\NestedComponent\NestedComponent.razor.g.cs
 C:\Users\jaya\Desktop\blazor\Workouts\BlazorApp1\BlazorApp1\obj\Debug\netcoreapp3.1\RazorDeclaration\Shared\ByDefault\MainLayout.razor.g.cs
 C:\Users\jaya\Desktop\blazor\Workouts\BlazorApp1\BlazorApp1\obj\Debug\netcoreapp3.1\RazorDeclaration\Shared\ByDefault\NavMenu.razor.g.cs
 C:\Users\jaya\Desktop\blazor\Workouts\BlazorApp1\BlazorApp1\obj\Debug\netcoreapp3.1\RazorDeclaration\Shared\RootLayout.razor.g.cs
@@ -99,7 +101,9 @@ C:\Users\jaya\Desktop\blazor\Workouts\BlazorApp1\BlazorApp1\obj\Debug\netcoreapp
 C:\Users\jaya\Desktop\blazor\Workouts\BlazorApp1\BlazorApp1\obj\Debug\netcoreapp3.1\Razor\Pages\DataBindUsingDataTable.razor.g.cs
 C:\Users\jaya\Desktop\blazor\Workouts\BlazorApp1\BlazorApp1\obj\Debug\netcoreapp3.1\Razor\Pages\Error.razor.g.cs
 C:\Users\jaya\Desktop\blazor\Workouts\BlazorApp1\BlazorApp1\obj\Debug\netcoreapp3.1\Razor\Pages\Index.razor.g.cs
+C:\Users\jaya\Desktop\blazor\Workouts\BlazorApp1\BlazorApp1\obj\Debug\netcoreapp3.1\Razor\Pages\LayoutInComponent.razor.g.cs
 C:\Users\jaya\Desktop\blazor\Workouts\BlazorApp1\BlazorApp1\obj\Debug\netcoreapp3.1\Razor\Pages\MyRazors\ToDo.razor.g.cs
+C:\Users\jaya\Desktop\blazor\Workouts\BlazorApp1\BlazorApp1\obj\Debug\netcoreapp3.1\Razor\Pages\NestedComponent\NestedComponent.razor.g.cs
 C:\Users\jaya\Desktop\blazor\Workouts\BlazorApp1\BlazorApp1\obj\Debug\netcoreapp3.1\Razor\Shared\ByDefault\MainLayout.razor.g.cs
 C:\Users\jaya\Desktop\blazor\Workouts\BlazorApp1\BlazorApp1\obj\Debug\netcoreapp3.1\Razor\Shared\ByDefault\NavMenu.razor.g.cs
 C:\Users\jaya\Desktop\blazor\Workouts\BlazorApp1\BlazorApp1\obj\Debug\netcoreapp3.1\Razor\Shared\RootLayout.razor.g.cs
@@ -115,9 +119,10 @@ C:\Users\jaya\Desktop\blazor\Workouts\BlazorApp1\BlazorApp1\obj\Debug\netcoreapp
 C:\Users\jaya\Desktop\blazor\Workouts\BlazorApp1\BlazorApp1\obj\Debug\netcoreapp3.1\BlazorApp1.csproj.CopyComplete
 C:\Users\jaya\Desktop\blazor\Workouts\BlazorApp1\BlazorApp1\obj\Debug\netcoreapp3.1\BlazorApp1.dll
 C:\Users\jaya\Desktop\blazor\Workouts\BlazorApp1\BlazorApp1\obj\Debug\netcoreapp3.1\BlazorApp1.pdb
+C:\Users\jaya\Desktop\blazor\Workouts\BlazorApp1\BlazorApp1\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\NestedComponent\NestedLayoutFetchData.razor.g.cs
 C:\Users\jaya\Desktop\blazor\Workouts\BlazorApp1\BlazorApp1\obj\Debug\netcoreapp3.1\RazorDeclaration\Shared\NestedLayout.razor.g.cs
+C:\Users\jaya\Desktop\blazor\Workouts\BlazorApp1\BlazorApp1\obj\Debug\netcoreapp3.1\Razor\Pages\NestedComponent\NestedLayoutFetchData.razor.g.cs
 C:\Users\jaya\Desktop\blazor\Workouts\BlazorApp1\BlazorApp1\obj\Debug\netcoreapp3.1\Razor\Shared\NestedLayout.razor.g.cs
-C:\Users\jaya\Desktop\blazor\Workouts\BlazorApp1\BlazorApp1\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\LayoutInComponent.razor.g.cs
-C:\Users\jaya\Desktop\blazor\Workouts\BlazorApp1\BlazorApp1\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\NestedComponent.razor.g.cs
-C:\Users\jaya\Desktop\blazor\Workouts\BlazorApp1\BlazorApp1\obj\Debug\netcoreapp3.1\Razor\Pages\LayoutInComponent.razor.g.cs
-C:\Users\jaya\Desktop\blazor\Workouts\BlazorApp1\BlazorApp1\obj\Debug\netcoreapp3.1\Razor\Pages\NestedComponent.razor.g.cs
+C:\Users\jaya\Desktop\blazor\Workouts\BlazorApp1\BlazorApp1\obj\Debug\netcoreapp3.1\BlazorApp1.csprojAssemblyReference.cache
+C:\Users\jaya\Desktop\blazor\Workouts\BlazorApp1\BlazorApp1\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\NestedComponent\_Imports.razor.g.cs
+C:\Users\jaya\Desktop\blazor\Workouts\BlazorApp1\BlazorApp1\obj\Debug\netcoreapp3.1\Razor\Pages\NestedComponent\_Imports.razor.g.cs

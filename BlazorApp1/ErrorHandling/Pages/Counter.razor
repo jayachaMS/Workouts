@@ -1,5 +1,5 @@
 ﻿@page "/counter"
-
+@implements IDisposable;
 <h1>Counter</h1>
 
 <p>Current count: @currentCount</p>
@@ -7,10 +7,76 @@
 <button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
 
 @code {
-    private int currentCount = 0;
+    private int currentCount;
 
     private void IncrementCount()
     {
         currentCount++;
     }
+
+    protected override void OnInitialized()
+    {
+        try
+        {
+            Console.WriteLine("Counter - OnInitialized");
+            base.OnInitialized();
+
+            //throw new Exception("OnInitializedException");
+        }
+        catch(Exception)
+        {
+            //throw;
+        }
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        Console.WriteLine("Counter - OnInitializedAsync");
+
+        await base.OnInitializedAsync();
+    }
+
+    protected override void OnParametersSet()
+    {
+        Console.WriteLine("Counter - OnParametersSet");
+        base.OnParametersSet();
+    }
+
+    protected override async Task OnParametersSetAsync()
+    {
+        Console.WriteLine("Counter - OnParametersSetAsync");
+        await base.OnParametersSetAsync();
+    }
+
+    protected override void OnAfterRender(bool firstRender)
+    {
+        Console.WriteLine("Counter - OnAfterRender - firstRender = " + firstRender);
+        base.OnAfterRender(firstRender);
+    }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        Console.WriteLine("Counter - OnAfterRenderAsync - firstRender = " + firstRender);
+        await base.OnAfterRenderAsync(firstRender);
+    }
+
+    protected override bool ShouldRender()
+    {
+        Console.WriteLine("Counter - ShouldRender");
+        return base.ShouldRender();
+    }
+
+    public void Dispose()
+    {
+        try
+        {
+            Console.WriteLine("Counter - Dispose");
+            //throw new Exception("DisposeException");
+        }
+        catch(Exception)
+        {
+            //throw;
+        }
+    }
+
 }
