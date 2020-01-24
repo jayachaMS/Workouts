@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Components;
@@ -10,6 +11,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using AuthenAndAutho.Data;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Http;
 
 namespace AuthenAndAutho
 {
@@ -27,8 +30,17 @@ namespace AuthenAndAutho
 		public void ConfigureServices(IServiceCollection services)
 		{
 			services.AddRazorPages();
-			services.AddServerSideBlazor();
+			services.AddServerSideBlazor(); 
 			services.AddSingleton<WeatherForecastService>();
+			//services.AddHttpContextAccessor();
+
+			//services.AddScoped<HttpClient>();
+
+			// Get authentication info
+			services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+
+			// 1. Cookie authentication
+			services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme).AddCookie();
 		}
 
 		// This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -49,6 +61,9 @@ namespace AuthenAndAutho
 			app.UseStaticFiles();
 
 			app.UseRouting();
+
+			app.UseAuthentication();
+			app.UseAuthorization();
 
 			app.UseEndpoints(endpoints =>
 			{

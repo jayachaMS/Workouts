@@ -3,23 +3,46 @@
 <div id="page">
 
     <header id="Title">
-        <section id="Logo"><img src="css/logo.png"/></section>
+        <section id="Logo">
+            <img src="css/logo.png"/>
+        </section>
     </header>
 
     <section id="MainTab">
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
+                <li>
+                    <a href="#">Home</a>
+                </li>
             </ul>
         </nav>
     </section>
-
+    
     <section id="Main">
         <section id="Index">
             <div class="">
                 <nav>
                     <ul>
-                        <li><a href="counter">Counter</a></li>
+                        <AuthorizeView>
+                            <Authorized>
+                                <li>
+                                    <a href="counter">Counter</a>
+                                </li>
+                                <li>
+                                    <a href="Logout">Logout</a>
+                                </li>
+                            </Authorized>
+                            <NotAuthorized>
+                                <li>
+                                    <a href="Login">Login</a>
+                                </li>
+                            </NotAuthorized>
+
+                        </AuthorizeView>
+                        <li>
+                            <a href="Test">Test</a>
+                        </li>
+
                     </ul>
                 </nav>
             </div>
@@ -32,5 +55,3 @@
         </section>
     </section>
 </div>
-
-
