@@ -26,8 +26,15 @@ namespace AuthenAndAutho.Pages.Login
 		#region Publics
 		public async Task<IActionResult> OnPostAsync()
 		{
+			if(string.IsNullOrEmpty(this.Email) || string.IsNullOrEmpty(this.Password))
+			{
+				TempData["LoginError"] = "Please give valid detail.";
+				return Page();
+			}
+
 			if(!(this.Email.ToLower().Equals("test@m-s.in") && this.Password.Equals("123456")))
 			{
+				TempData["LoginError"] = "The given credential is not valid.";
 				return Page();
 			}
 
@@ -42,7 +49,7 @@ namespace AuthenAndAutho.Pages.Login
 			                                   CookieAuthenticationDefaults.AuthenticationScheme,
 			                                   new ClaimsPrincipal(claimIdentity));
 
-			return LocalRedirect(this.Url.Content("~/host"));
+			return LocalRedirect(this.Url.Content("~/"));
 		}
 		#endregion
 	}

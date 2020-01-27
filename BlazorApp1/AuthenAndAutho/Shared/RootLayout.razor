@@ -10,11 +10,15 @@
 
     <section id="MainTab">
         <nav>
-            <ul>
-                <li>
-                    <a href="#">Home</a>
-                </li>
-            </ul>
+            <AuthorizeView>
+                <Authorized>
+                    <ul>
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                    </ul>
+                </Authorized>
+            </AuthorizeView>
         </nav>
     </section>
     

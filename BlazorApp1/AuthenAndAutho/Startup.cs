@@ -32,9 +32,6 @@ namespace AuthenAndAutho
 			services.AddRazorPages();
 			services.AddServerSideBlazor(); 
 			services.AddSingleton<WeatherForecastService>();
-			//services.AddHttpContextAccessor();
-
-			//services.AddScoped<HttpClient>();
 
 			// Get authentication info
 			services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();

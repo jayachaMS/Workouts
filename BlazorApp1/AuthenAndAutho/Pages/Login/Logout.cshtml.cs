@@ -11,8 +11,6 @@ namespace AuthenAndAutho.Pages.Login
 		#region Publics
 		public async Task<IActionResult> OnGetAsync(string returnUrl = null)
 		{
-			// Clear the existing external cookie
-
 			await this.HttpContext
 			          .SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
 
