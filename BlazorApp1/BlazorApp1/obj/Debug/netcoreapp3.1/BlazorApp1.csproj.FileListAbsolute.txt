@@ -133,3 +133,4 @@ C:\Users\jaya\Desktop\blazor\Workouts\BlazorApp1\BlazorApp1\obj\Debug\netcoreapp
 C:\Users\jaya\Desktop\blazor\Workouts\BlazorApp1\BlazorApp1\obj\Debug\netcoreapp3.1\Razor\Pages\Widget\Left.razor.g.cs
 C:\Users\jaya\Desktop\blazor\Workouts\BlazorApp1\BlazorApp1\obj\Debug\netcoreapp3.1\Razor\Pages\Widget\Right.razor.g.cs
 C:\Users\jaya\Desktop\blazor\Workouts\BlazorApp1\BlazorApp1\obj\Debug\netcoreapp3.1\Razor\Pages\Widget\Widget.razor.g.cs
+C:\Users\jaya\Desktop\blazor\Workouts\BlazorApp1\BlazorApp1\obj\Debug\netcoreapp3.1\BlazorApp1.csprojAssemblyReference.cache
