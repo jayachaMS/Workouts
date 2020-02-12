@@ -10,6 +10,9 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using ErrorHandling.Data;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Components.Authorization;
+using Microsoft.AspNetCore.Http;
 
 namespace ErrorHandling
 {
@@ -29,6 +32,14 @@ namespace ErrorHandling
 			services.AddRazorPages();
 			services.AddServerSideBlazor();
 			services.AddSingleton<WeatherForecastService>();
+
+			// Get authentication info
+			services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+
+			// 1. Cookie authentication
+			services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme).AddCookie();
+
+			services.AddScoped<AuthenticationStateProvider, CustomAuthenticationStateProvider>();
 		}
 
 		// This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -49,6 +60,9 @@ namespace ErrorHandling
 			app.UseStaticFiles();
 
 			app.UseRouting();
+
+			app.UseAuthentication();
+			app.UseAuthorization();
 
 			app.UseEndpoints(endpoints =>
 			{
