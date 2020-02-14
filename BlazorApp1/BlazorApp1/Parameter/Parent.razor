@@ -1,0 +1,41 @@
+﻿@page "/PassComplexObject"
+<h3>Parent</h3>
+
+<table class="table">
+    <thead>
+    <tr>
+        <th>Name</th>
+        <th>FirstName</th>
+        <th>Age</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach(Student student in parentParameters.Students)
+    {
+        <tr>
+            <td>@student.Name</td>
+            <td>@student.FirstName</td>
+            <td>@student.Age</td>
+            <td>
+                <a style="color: blue; cursor: pointer;" @onclick="(() => ShowChild(student.Id))">Show detail</a>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>
+
+<br/>
+@if(student!=null)
+{
+    <Child Student="@student"/>
+}
+
+@code {
+    readonly ParentParameters parentParameters = new ParentParameters();
+    Student student;
+
+    private void ShowChild(int nId)
+    {
+        student = parentParameters.Students.FirstOrDefault(s => s.Id == nId);
+    }
+}

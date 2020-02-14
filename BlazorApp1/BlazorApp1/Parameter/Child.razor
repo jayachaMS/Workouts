@@ -1,0 +1,36 @@
+﻿<h3>Child</h3>
+
+@if(Student == null)
+{
+    <div class="alert alert-warning">
+        <strong>Warning!</strong> No student record found.
+    </div>
+}
+else
+{
+    <table class="table">
+        <thead>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Name</td>
+                <td>@Student.Name</td>
+            </tr>
+            <tr>
+                <td>FirstName</td>
+                <td>@Student.FirstName</td>
+        </tr>
+        <tr>
+            <td>Age</td>
+            <td>@Student.Age</td>
+        </tr>
+        </tbody>
+    </table>
+}
+
+@code {
+
+    [Parameter]
+    public Student Student { get; set; }
+
+}

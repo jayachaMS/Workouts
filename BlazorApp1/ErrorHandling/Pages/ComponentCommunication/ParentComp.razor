@@ -1,0 +1,65 @@
+﻿@page "/ComponentComunication"
+
+<!-- Parent Component -->
+
+<ChildComponent OnClick="ClickHandler"></ChildComponent>
+
+<p>@message</p>
+
+@code {
+
+    string message = "This is ParentComponent";
+
+    void ClickHandler(string newMessage)
+    {
+        message = newMessage;
+    }
+
+}
+
+@*@page "/"*@
+
+@*<h1>Parent Component</h1>
+
+    <p>Counter: @Counter</p>
+
+    <ChildComponent ref="ChildComponent1" bind-Counter="@Counter" />
+
+    @functions {
+        private int Counter = 1;
+
+        ChildComponent ChildComponent1 = new ChildComponent();
+
+        protected override void OnAfterRender(bool firstRender)
+        {
+            ChildComponent1.CounterChanged += ChildFiredEvent;
+        }
+
+        public void ChildFiredEvent(int counter)
+        {
+            Counter = counter;
+            StateHasChanged();
+        }
+    }*@
+
+@*<p>ParentYear: @ParentYear</p>
+
+    <ChildComponent ref="ChildComponent1" bind-Year="@ParentYear" />
+
+    @code {
+        private int ParentYear = 1978;
+
+        ChildComponent ChildComponent1 = new ChildComponent();
+
+        protected override void OnAfterRender(bool firstRender)
+        {
+            ChildComponent1.YearChanged += ChildFiredEvent;
+        }
+
+        public void ChildFiredEvent(int _year)
+        {
+            ParentYear = _year;
+            StateHasChanged();
+        }
+
+    }*@

@@ -1,0 +1,47 @@
+﻿
+<button @onclick="@(() => OnClick.InvokeAsync("This is ChildComponent"))">Click me</button>
+
+@code {
+    [Parameter] public EventCallback<string> OnClick { get; set; }
+}
+
+@*<input type="button" value="Previuos" @onclick="Previous" />
+    <input type="button" value="Next" @onclick="Next" />
+
+    @functions {
+        [Parameter]
+        public int Counter { get; set; }
+
+        [Parameter]
+        public Action<int> CounterChanged { get; set; }
+
+        public void Next()
+        {
+            ++Counter;
+            CounterChanged?.Invoke(Counter);
+        }
+
+        public void Previous()
+        {
+            --Counter;
+            CounterChanged?.Invoke(Counter);
+        }
+    }*@
+
+@*<p>ChildYear: @Year</p>
+
+    <button class="btn btn-primary" @onclick="ChangeTheYear">Change Year to 1986</button>
+
+    @code {
+        [Parameter]
+        public int Year { get; set; }
+
+        [Parameter]
+        public Action<int> YearChanged { get; set; }
+
+        public void ChangeTheYear()
+        {
+            Year = 1986;
+            YearChanged?.Invoke(Year);
+        }
+    }*@
