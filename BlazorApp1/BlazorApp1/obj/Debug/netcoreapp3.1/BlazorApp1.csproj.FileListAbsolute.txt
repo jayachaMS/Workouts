@@ -142,3 +142,9 @@ C:\Users\jaya\Desktop\blazor\Workouts\BlazorApp1\BlazorApp1\obj\Debug\netcoreapp
 C:\Users\jaya\Desktop\blazor\Workouts\BlazorApp1\BlazorApp1\obj\Debug\netcoreapp3.1\Razor\Pages\DynamicForms\Insurance\InsuranceNew.razor.g.cs
 C:\Users\jaya\Desktop\blazor\Workouts\BlazorApp1\BlazorApp1\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\DynamicForms\Insurance\InsuranceDelete.razor.g.cs
 C:\Users\jaya\Desktop\blazor\Workouts\BlazorApp1\BlazorApp1\obj\Debug\netcoreapp3.1\Razor\Pages\DynamicForms\Insurance\InsuranceDelete.razor.g.cs
+C:\Users\jaya\Desktop\blazor\Workouts\BlazorApp1\BlazorApp1\obj\Debug\netcoreapp3.1\RazorDeclaration\Shared\ParamTest.razor.g.cs
+C:\Users\jaya\Desktop\blazor\Workouts\BlazorApp1\BlazorApp1\obj\Debug\netcoreapp3.1\Razor\Shared\ParamTest.razor.g.cs
+C:\Users\jaya\Desktop\blazor\Workouts\BlazorApp1\BlazorApp1\obj\Debug\netcoreapp3.1\RazorDeclaration\Parameter\Child.razor.g.cs
+C:\Users\jaya\Desktop\blazor\Workouts\BlazorApp1\BlazorApp1\obj\Debug\netcoreapp3.1\RazorDeclaration\Parameter\Parent.razor.g.cs
+C:\Users\jaya\Desktop\blazor\Workouts\BlazorApp1\BlazorApp1\obj\Debug\netcoreapp3.1\Razor\Parameter\Child.razor.g.cs
+C:\Users\jaya\Desktop\blazor\Workouts\BlazorApp1\BlazorApp1\obj\Debug\netcoreapp3.1\Razor\Parameter\Parent.razor.g.cs

@@ -1,5 +1,16 @@
 ﻿@layout NestedLayout
-@page "/NestedComponent"
+@page "/NestedComponent/{LayoutParam}"
 
 <h1>This component is in 'Nested layout!!!'</h1>
+<p>Parameter from Layout: @LayoutParam</p>
+
+@code
+{
+    [Parameter]
+    public string LayoutParam { get; set; }
+
+    protected override void OnParametersSet()
+    {
+    }
+}
 

@@ -1,6 +1,13 @@
-﻿@layout RootLayout
-@inherits LayoutComponentBase
+﻿@inherits NestedLayout1
 
+<div>
+    <ParamTest LayoutParam="@LayoutParam"></ParamTest>
+
+    <br />
+    <p>Argument from main layout: @LayoutParam</p>    
+</div>
+    
+<br />    
 <section id="Content-nested">
     <div>
         @Body
