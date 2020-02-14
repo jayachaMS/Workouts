@@ -1,0 +1,9 @@
+﻿@*@page "/ParamTest{LayoutParam}"*@
+<h3>ParamTest</h3>
+
+<p>Param: @LayoutParam</p>
+
+@code {
+    [Parameter]
+    public string LayoutParam { get; set; }
+}
